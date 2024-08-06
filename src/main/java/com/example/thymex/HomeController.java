@@ -1,4 +1,4 @@
-package com.example.jdemo_htmx;
+package com.example.thymex;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +10,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/")
 public class HomeController {
+
     @GetMapping
     public String index(Model model) {
         model.addAttribute("pageTitle", "ThymeX");
@@ -19,4 +20,5 @@ public class HomeController {
                         "James Clerk Maxwell"));
         return "index";
     }
+
 }

@@ -10,7 +10,10 @@
 <div layout:fragment="content">
     <!-- Add content here -->
     <div>Welcome to your <span th:text="${pageTitle}">Spring Boot with Thymeleaf</span> project!</div>
-    <div class="text-green-700 font-bold">See <code>HELP.md</code> for instructions on how to get started.</div>
+    <div class="text-primary font-bold">See <code>HELP.md</code> for instructions on how to get started.</div>
+    <div class="text-accent font-bold">See <code>HELP.md</code> for instructions on how to get started.</div>
+    <div>[[${scientists}]]</div>
+    <div class="btn btn-info font-bold">See <code>HELP.md</code> for instructions on how to get started.</div>
 </div>
 <th:block layout:fragment="script-content">
     <!-- Add additional scripts there that are only needed for this page (Application wide scripts should be added in layout/main.html) -->
